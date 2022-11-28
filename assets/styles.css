@@ -1,0 +1,132 @@
+/* Variables */
+:root {
+    /* font */
+    --main-font: Arial, Helvetica, sans-serif;
+
+    /* colors */
+    --main-color: #000000;
+    --secondary-color: #F0FFFF;
+    --title-color: #505050;
+    --background-nav: rgba(255,255,255,0.5);
+    --background-main: rgba(0, 0, 0, 0.5);
+    --text-shadow: 1px 0px #F0FFFF;
+
+}
+
+/* General Styles */
+
+body {
+    background: url("images/oyo.jpg") top left / cover no-repeat;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    margin: 0;
+
+}
+
+/* Header Styles */
+
+.title {
+    text-align: center;
+    color: var(--title-color);
+    text-shadow: var(--text-shadow);
+    margin: 60px auto 18px;
+    font-size: 38px;
+    font-weight: lighter;
+}
+
+/* Navbar Styles */
+
+.navbar, .navbar__menu {
+   display: flex;
+   align-items: center;
+}
+
+.navbar {
+    justify-content: space-between;
+    background-color: var(--background-nav);
+}
+
+ul li {
+    list-style: none;
+}
+
+.navbar__menu {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__title {
+    margin: 0;
+    padding: 0px 14px;
+    font-weight: normal;
+}
+
+.navbar__links {
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: var(--main-color);    
+    padding: 8px 50px;
+    font-size: 15px;
+    border: 2px solid black;
+}
+
+.navbar__links:hover {
+    background-color: var(--background-main);
+}
+
+li.dropdown, .dropbtn {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    font-family: var(--main-font);
+    font-size: 15px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+  
+.navbar__input, .navbar__button {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar__button {
+    margin: 0px 12px 0 -6px;
+    background-color: transparent;
+    border: 1px solid var(--title-color);
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+/* Main Styles */
+.container {
+    background-color: var(--background-main);
+    width: 70%;
+    margin: auto;
+}
+
+.container__title {
+    padding-top: 50px;
+}
