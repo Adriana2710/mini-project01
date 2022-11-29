@@ -14,17 +14,17 @@
     <nav class="navbar">
         <ul class="navbar__menu">
             <li class="navbar__title">Navbar</li>
-            <li><a href="#" class="navbar__links">Home</a></li>
-            <li><a href="#" class="navbar__links">Link</a></li>
-            <li class="dropdown">
-                <a href="#" class="navbar__links dropbtn" >Dropdown</a>
+            <li class="navbar__links"><a href="#">Home</a></li>
+            <li class="navbar__links"><a href="#">Link</a></li>
+            <li class="dropdown navbar__links">
+                <a href="#" class="dropbtn" >Dropdown</a>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
                 </div>
             </li>
-            <li><a href="#" class="navbar__links">Affiliates</a></li>
+            <li class="navbar__links"><a href="#">Affiliates</a></li>
         </ul>
         <div class="navbar__search">
             <input type="text" placeholder="Search" class="navbar__input">
@@ -35,19 +35,45 @@
         <div class="container">
             <h2 class="container__title title">Enter here</h2>
             <form action="">
-                <div>
-                    <label for="name">Enter username:</label>
-                    <input type="text" id="name" name="name" placeholder="username">
+                <div class="input-text">
+                    <div>
+                        <label for="name">Enter username:</label>
+                        <input type="text" id="name" name="name" placeholder="username">
+                    </div>
+                    <div>
+                        <label for="password">Enter password:</label>
+                        <input type="text" id="password" name="password" placeholder="password">
+                    </div>
                 </div>
-                <div>
-                    <label for="password">Enter password:</label>
-                    <input type="text" id="password" name="password" placeholder="password">
+                <div class="input-radio">
+                    <div class="radio__left radio__all">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" id="gender" value="male">
+                    </div>
+                    <div class="radio__center radio__all">
+                        <label for="gender">Female</label>
+                        <input type="radio" name="gender" id="gender" value="female">
+                    </div>
+                    <div class="radio__right radio__all">
+                        <label for="gender">Nope</label>
+                        <input type="radio" name="gender" id="gender" value="none">
+                    </div>
                 </div>
-                <div>
-                    <label for="gender">Select your gender:</label>
-                    <input type="radio" id="gender" name="gender">
-                </div>
+                <button class="btn">Login</button>
+                <p>Not registered? 
+                    <a href="#">Create an account</a>
+                </p>
             </form>
+            <section class="disclaimers">
+                <h2 class="title">Disclaimers</h2>
+                <ul class="disclaimers__list">
+                    <li class="disclaimers__items">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet lacus sit amet maximus interdum</li>
+                    <li class="disclaimers__items">Duis metus velit, interdum sed quam quis, laoreet condimentum dui. Vestibulum quis enim ullamcorper, ullamcorper ligula id, finibus sem.</li>
+                    <li class=" disclaimers__items--highlighted">Donec condimentum consectetur eros, fringilla condimentum sapien mollis sit amet.</li>
+                    <li class="disclaimers__items">Nam ipsum magna, dictum pellentesque elementum et, tempus luctus sapien.</li>
+                    <li class="disclaimers__items">Maecenas feugiat tortor non metus elementum, ut facilisis nulla vehicula. Sed malesuada commodo ex id aliquam. Nam in velit quam.</li>
+                </ul>
+            </section>
         </div>
     </main>
     
